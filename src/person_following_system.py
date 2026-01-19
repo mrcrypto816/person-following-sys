@@ -517,8 +517,8 @@ class PersonFollowingSystem:
                 Target bounding box (x1, y1, x2, y2) if found.
             - 'distance' : float, optional
                 Target distance in meters if found.
-            - 'direction' : str, optional
-                Movement direction ('approaching', 'receding', 'stable').
+            - 'direction' : str or None, optional
+                Movement direction ('approaching', 'leaving'), or None if below threshold.
             - 'feature_saved' : bool, optional
                 Whether a new feature was saved this frame.
             - 'within_margin' : bool, optional
